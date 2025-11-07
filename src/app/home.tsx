@@ -59,7 +59,7 @@ const App: Component = () => {
         />
       </button>
 
-      <section class="grid lg:grid-cols-2 grid-cols-1 place-items-center lg:place-items-start  gap-10 py-10 lgmax-w-[80%] w-full mx-auto">
+      <section class="grid lg:grid-cols-2 grid-cols-1 place-items-center lg:place-items-start  gap-10 py-10 lg-max-w-[80%] w-full mx-auto">
         <div class="flex flex-col gap-4">
           <label>How much Pokemon ?</label>
           <Select
