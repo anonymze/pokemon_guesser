@@ -13,6 +13,7 @@ export default defineConfig({
   },
   server: {
     port: 3000,
+    allowedHosts: ["bigger-designing-greg-binding.trycloudflare.com", "https://mobiles-dan-reproduction-murphy.trycloudflare.com"]
   },
   build: {
     target: "esnext",
