@@ -13,7 +13,7 @@ export default defineConfig({
   },
   server: {
     port: 3000,
-    allowedHosts: ["https://phases-bar-jacob-greg.trycloudflare.com"]
+    allowedHosts: ["https://phases-bar-jacob-greg.trycloudflare.com", "https://moments-disabled-hello-hampton.trycloudflare.com"]
   },
   build: {
     target: "esnext",
