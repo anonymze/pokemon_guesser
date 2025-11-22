@@ -1,0 +1,10 @@
+.retro {
+    font-family:
+        "Press Start 2P",
+        system-ui,
+        -apple-system,
+        sans-serif;
+    /*font-display: swap;*/
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}

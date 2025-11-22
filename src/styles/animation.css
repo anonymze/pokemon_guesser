@@ -1,0 +1,83 @@
+.animation-rotation-translate-full-screen {
+    animation-name: rotation_translate_full_screen;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.animation-rotation-translate-full-screen-reverse {
+    animation-name: rotation_translate_full_screen_reverse;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.animation-translate-full-screen {
+    animation-name: translate_full_screen_reverse;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.animation-translate-full-screen-reverse {
+    animation-name: translate_full_screen_reverse;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotation_translate_full_screen {
+    to {
+        transform: translateX(calc(100vw + 150px)) rotate(calc(360deg * 2));
+    }
+}
+
+@keyframes rotation_translate_full_screen_reverse {
+    to {
+        transform: translateX(calc(-100vw - 150px)) rotate(calc(-360deg * 2));
+    }
+}
+
+@keyframes translate_full_screen {
+    to {
+        width: calc(100vw + 225px);
+    }
+}
+
+@keyframes translate_full_screen_reverse {
+    to {
+        width: calc(100vw + 225px);
+    }
+}
+
+.focus-icon {
+    position: relative;
+}
+
+.focus-icon::before {
+    content: "";
+    display: none;
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: url("/selector.png") center/contain no-repeat;
+    left: -2.3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+
+.focus-icon:has(:focus)::before,
+.focus-icon:focus::before {
+    display: block;
+    animation: retro-selector-bounce 0.8s ease-in-out infinite;
+}
+
+@keyframes retro-selector-bounce {
+    0%, 100% {
+        transform: translateY(-50%) translateX(0);
+    }
+    50% {
+        transform: translateY(-50%) translateX(-3px);
+    }
+}
