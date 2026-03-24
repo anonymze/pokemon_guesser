@@ -96,7 +96,7 @@ const Page: Component = () => {
         </label>
       </div>
 
-      <h1 class="text-center text-3xl font-bold">Who's that pokemon ?</h1>
+      <h1 class="text-center text-3xl font-bold">Salut ?</h1>
 
       <Show when={startGame()}>
         <div
